@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Ma page de test</title>
+    <style>
+      h1 {
+        text-align: center;
+        justify-content: center;
+      }
+      .personnel{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .personnel ul,
+      .education ul {
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .personnel li,
+      .education li {
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+      }
+
+      h1[id="titre"] {
+        font-style: italic;
+      }
+
+      .education ul{
+        display: flex;
+      }
+      .education li{
+        height: 110px;
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        display: block;
+        border-radius: 15px;
+        background-color: rgb(152, 152, 171);
+      }
+      .education img{
+        height: 50px;
+        width: 50px;
+      }
+      
+      #partie{
+        background-color: aqua;
+        border-radius: 150px;
+        box-sizing: border-box;
+      }
+      .experience ul,
+      .projets ul{
+        list-style: none;
+        justify-content: center;
+      }
+      .experience li,
+      .projets li{
+        list-style: none;
+        justify-content: center;
+      }
+      p[id="texte"] {
+        justify-content: center;
+        text-align: justify;
+      }
+      .mission{
+        position: relative;
+      }
+      #date,
+      #cite{
+        text-align: right;
+        justify-content: right;
+        position: absolute;
+        right: -0px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="personnel">
+        <h1 id="titre">Curriculum Vitae</h1>
+        <ul>
+          <li>+33 7 66 65 94 73</li>
+          <li><a href="mailto:charles.thiam14@gmail.com">charles.thiam14@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/papa-charles-thiam">linkedin.com/in/papa-charles-thiam</a></li>
+          <li><a href="https://github.com/Baabel001">github.com/charles</a></li>
+        </ul>
+      </div>
+      <hr>
+    </header>
+    <main>
+      <section class="">
+
+          <div class="education">
+            <span id="partie"><strong>Education</strong></span>
+            <ul>
+              <li>
+                <div>
+                  <span>Sép. 2021--Nov. 2023</span>
+                </div>
+                <div>
+                  <span>Ecole Nationale de la Statistique et de l'Analyse de l'Information -- ENSAI</span>
+                </div>
+                <div>
+                  <span>Data Scientist</span>
+                </div>
+                <div>
+                  <span>Rennes</span>
+                </div>
+              </li>
+              <li>
+                <span>Sép. 2019--Nov. 2023</span><br>
+                <span>Ecole Nationale de la Statistique et de l'Analyse Economique -- ENSAE</span><br>
+                <span>Statisticien Economiste</span>
+                <br><span>Dakar</span>
+              </li>
+              <li>
+                <span>Avril 2016--Juin. 2019</span><br>
+                <span>Université Gaston Berger -- UGB</span><br>
+                <span>Licence Mathématiques Appliquées</span>
+                <br><span>Saint-Louis</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience">
+            <span id="partie"><strong>Expérience professionnelle</strong></span>
+            <ul>
+              <li>
+                <div class="mission">
+                  <span><strong>Ingénieur R&D et Data scientist</strong></span>
+                  <span id="date">Avril 2023 -- Oct. 2023</span>
+                </div>
+                <div class="cite">
+                  <span><strong>Datastorm</strong></span>
+                  <span id="cite">Montrouge, Île de France</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">Ces dernières décenies ont été marquées par l'expansion et l'intégration de l'intelligence artificielle dans de nombreux secteurs. Cet révolution découle en parti du développement des IoT. Cependant, la majorité de ces données sont de nature hautement sensible. Ainsi, avec les nouvelles politiques relatives aux données promulguées par la RGPD et la CNIL, on se demande s'il y a une alternative de l'approche classique pour continuer à explorer le potentiel des données. C'est dans ce contexte que s'inscrivait ma mission.
+                    Elle consistait à étudier le <em>federated learning</em>, un nouveau paradigme d'apprentissage automatique qui permet d'ajuster un modèle de machine learning sur des données distribuées tout en préservant leur confidentialité. Il s'agissait en gros d'étudier la convergence et l'applicabilité de cette approche. Nous avons développé des programmes <em>from scratch</em> pour appliquer ces méthodes sur des données synthétiques et réelles. Nous avons aussi mis en place une application web qui simule le processus d'apprentissage
+                    dans un environnement fédéré.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="mission">
+                  <span><strong>Data scientist</strong></span>
+                  <span id="date">Juil. 2022 -- Sép. 2022</span>
+                </div>
+                <div class="cite">
+                  <span><strong>Anses</strong></span>
+                  <span id="cite">Ploufragan, Bretagne</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">
+                    Cherchant à améliorer la protection des aliments, de l'environnement, des animaux et des éleveurs, l'Anses a ménée une enquête au près des élevages de porcs en système alternatif en France continentale. Cette enquête s'inscrit dans un programme plus large appelé <em>PIGAL</em> qui cherche à améliorer l'élevage de porcs, la biosécurité et l'ergonomie des éleveurs. Ma tâche était d'explorer les données de ladite enquête. Il s'agissait de décrire les élevages en fonction de leurs caractéristiques générales, leur niveau de biosécurité
+                    ainsi que l'ergonomie des éleveurs.
+                  </p>
+                </div>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="projets">
+            <span id="partie"><strong>Projets</strong></span>
+            <ul>
+              <li>
+                <div class="mission">
+                  <span><strong>Projet de fin d'études |</strong><small> Deep Learning, Séries temporelles, Python, Git</small></span>
+                  <span id="date">Déc. 2022 -- Mars 2023</span>
+                </div>
+                <div class="cite">
+                  <span><strong>ENSAI</strong></span>
+                  <span id="cite">Bruz, Rennes</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">
+                    La production en électricité est un souci majeur des industries énergetiques. En effet, l'électricité n'est pas un produit stockable. Il devient ainsi une préoccupation majeure de trouve l'équilibre entre l'offre et la demande. Pour pallier ce problème, il prévoit la consommation des ménages afin d'ajuster leur production.
+                    Pour étudier et prévoir la consommation de 
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="mission">
+                  <span><strong>Projet académique |</strong><small> Deep Learning, Python, Git</small></span>
+                  <span id="date">Oct. 2022 -- Jan. 2023</span>
+                </div>
+                <div class="cite">
+                  <span><strong>ENSAI</strong></span>
+                  <span id="cite">Bruz, Rennes</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">
+
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="mission">
+                  <span><strong>Projet Statistique |</strong><small> Régression PLS, Random forest, Git</small></span>
+                  <span id="date">Jan. 2022 -- Mai 2023</span>
+                </div>
+                <div class="cite">
+                  <span><strong>ENSAI</strong></span>
+                  <span id="cite">Bruz, Rennes</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">
+
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="mission">
+                  <span><strong>Projet informatique |</strong><small> Python, PostgreSQL, Git</small></span>
+                  <span id="date">Sép. 2021 -- Déc. 2023</span>
+                </div>
+                <div class="cite">
+                  <span><strong>ENSAI</strong></span>
+                  <span id="cite">Bruz, Rennes</span>
+                </div>
+                <div class="texte">
+                  <p id="texte">
+
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </section>
+    </main>
+  
+  </body>
+</html>
