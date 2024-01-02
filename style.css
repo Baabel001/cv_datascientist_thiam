@@ -1,0 +1,74 @@
+h1 {
+  text-align: center;
+  justify-content: center;
+}
+.personnel{
+  font-family: 'Times New Roman', Times, serif;
+}
+.personnel ul,
+.education ul {
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: space-around;
+}
+.personnel li,
+.education li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1[id="titre"] {
+  font-style: italic;
+}
+
+.education ul{
+  display: flex;
+}
+.education li{
+  height: 110px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  border-radius: 15px;
+  background-color: rgb(152, 152, 171);
+}
+.education img{
+  height: 50px;
+  width: 50px;
+}
+
+#partie{
+  background-color: aqua;
+  border-radius: 150px;
+  box-sizing: border-box;
+}
+.experience ul,
+.projets ul{
+  list-style: none;
+  justify-content: center;
+}
+.experience li,
+.projets li{
+  list-style: none;
+  justify-content: center;
+}
+p[id="texte"] {
+  justify-content: center;
+  text-align: justify;
+}
+.mission{
+  position: relative;
+}
+#date,
+#cite{
+  text-align: right;
+  justify-content: right;
+  position: absolute;
+  right: -0px;
+  box-sizing: border-box;
+}
